@@ -1,7 +1,9 @@
 #include <iostream>
 #include <cmath>
+#include <locale>
 
 int main() {
+    setlocale(LC_ALL, "uk_UA");
     double r, A, B, C, D;
 
     // Введення даних
@@ -38,4 +40,3 @@ int main() {
 
     return 0;
 }
-
