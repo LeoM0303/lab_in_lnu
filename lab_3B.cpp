@@ -1,7 +1,9 @@
 #include <iostream>
 #include <cmath> // Підключення бібліотеки cmath для функцій sqrt, pow та sin
+#include <locale>
 
 int main() {
+    setlocale(LC_ALL, "ua_UK");
     double x, y, z; // Змінні x, y та z мають бути визначені з деякими значеннями
     
     x = 1.0;
