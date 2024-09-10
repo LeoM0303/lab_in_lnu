@@ -1,8 +1,10 @@
 #include <iostream>
 #include <algorithm>
 #include <cmath>
+#include <locale>
 
 int main() {
+    setlocale(LC_ALL, "uk_UA");
     double S, v, h, u, t;
 
     std::cout << "Enter S (distance), v (taxi speed), h (taxi cost per km), u (walking speed), t (time): ";
