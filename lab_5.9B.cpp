@@ -1,9 +1,11 @@
 #include <iostream>
 #include <iomanip>
+#include <locale>
 
 int main() {
+    setlocale(LC_ALL, "ua_UK");
     std::cout << std::fixed << std::setprecision(6);  // Встановлюємо точність виводу до 6 десяткових знаків
-    std::cout << "См³\t\tМ³\t\tЛітри\n";  // Заголовки колонок
+    std::cout << "См³\t\tМ³\t\tЛітри\n";
 
     for (int cm3 = 1000; cm3 <= 2000; cm3 += 50) {
         double m3 = cm3 * 1e-6;     // Перетворення в кубічні метри
