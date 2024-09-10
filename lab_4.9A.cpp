@@ -1,6 +1,8 @@
 #include <iostream>
+#include <locale>
 
 int main() {
+    setlocale(LC_ALL, "uk_UA");
     double a, b, c;
 
     // Введення трьох чисел
