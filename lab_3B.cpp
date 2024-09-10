@@ -1,32 +1,22 @@
-#include  <iostream>
-#include <cmath>
+#include <iostream>
+#include <cmath> // Підключення бібліотеки cmath для функцій sqrt, pow та sin
 
 int main() {
-    double S;
+    double x, y, z; // Змінні x, y та z мають бути визначені з деякими значеннями
+    
+    x = 1.0;
+    y = 2.0;
+    z = 3.0;
 
-    // Площа
-    std::cout << "Введіть площу круга: ";
-    std::cin >> S;
+    // Обчислення a
+    double a = sqrt(abs(x) + 1 / (sqrt(3 / (2 + y))));
 
-    // Перевірка на правильність даних
-    if (S <= 0) {
-        std::cout << "Памʼятай, площа має бути додатнім числом.\n";
-        return 1; // Завершення програми з кодом помилки
-    }
+    // Обчислення b
+    double b = sin(pow(log(z / 8), 2));
 
-    // Обчислюємо радіус
-    double r = sqrt(S / M_PI);
+    // Виведення результатів
+    std::cout << "a = " << a << std::endl;
+    std::cout << "b = " << b << std::endl;
 
-    // Обчислюємо діаметр
-    double D = r * 2;
-
-    // Обчислюємо довжину кола
-    double L = 2 * M_PI * r;
-
-    // Вивід інформації
-    std::cout << "Діаметр кола: " << D << "\n";
-    std::cout << "Довжина кола: " << L << "\n";
-
-    return 0; // Успішне завершення програми
+    return 0;
 }
-
