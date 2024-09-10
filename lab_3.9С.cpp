@@ -1,6 +1,8 @@
 #include <iostream>
+#include <locale>
 
 int main() {
+    setlocale(LC_ALL, "uk_UA");
     int K;
     std::cout << "Введіть день року (K від 1 до 365): ";
     std::cin >> K;
