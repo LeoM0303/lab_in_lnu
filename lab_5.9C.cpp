@@ -1,11 +1,19 @@
 #include <iostream>
 #include <cmath> 
  
+using namespace std;
+ 
 int main() {
-    const int n = 20;  
-    for (int i = 1; i <= n; ++i) {
-        double result = 3 - 3 * sin(pow(i, 2));
-        std::cout << "Element " << i << ": " << result << std::endl;
+    // Цикл для перших 20 елементів послідовності
+    for (int i = 1; i <= 20; ++i) {
+        // Обчислення значення послідовності 3 - 3 * sin(i^2)
+        double value = 3 - 3 * sin(i * i);
+ 
+        // Виводимо тільки від'ємні елементи
+        if (value < 0) {
+            cout << "Element " << i << ": " << value << endl;
+        }
     }
+ 
     return 0;
 }
